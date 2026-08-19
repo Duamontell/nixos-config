@@ -2,6 +2,7 @@
   imports = [
     ./git.nix
     ./helix.nix
-    ./hyprland.nix
+    ./kitty.nix
+    ./hyprland/hyprland.nix
   ];
 }

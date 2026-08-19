@@ -8,6 +8,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    caelestia-shell = {
+      url = "github:caelestia-dots/shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -19,8 +24,8 @@
     {
       homeConfigurations."dutelik" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ 
-          ./home-manager/home.nix 
+        modules = [
+          ./home-manager/home.nix
         ];
       };
     };

@@ -1,4 +1,4 @@
-{ config, ... }:
+{ ... }:
 
 {
   programs.helix = {
@@ -13,14 +13,26 @@
     };
 
     languages = {
-      language = [{
-        name = "lua";
-        auto-format = false;
-        formatter = {
-          command = "stylua";
-          args = [ "-" ];
-        };
-      }];
+      language = [
+        {
+          name = "lua";
+          language-servers = [ "lua-language-server" ];
+          auto-format = false;
+          formatter = {
+            command = "stylua";
+            args = [ "-" ];
+          };
+        }
+
+        {
+          name = "nix";
+          language-servers = [ "nixd" ];
+          auto-format = true;
+          formatter = {
+            command = "nixfmt";
+          };
+        }
+      ];
     };
   };
 }
