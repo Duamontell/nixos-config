@@ -2,9 +2,9 @@
 
 hl.monitor({
 	output = "",
-	mode = "preferred",
+	mode = "1920x1200@165",
 	position = "auto",
-	scale = "auto",
+	scale = "1.25",
 })
 
 -- MY PROGRAMS
@@ -13,7 +13,21 @@ local terminal = "kitty"
 
 -- ENVIRONMENT VARIABLES
 
+hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.env("NIXOS_OZONE_WL", "1")
+hl.env("GDK_SCALE", 1.25)
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("QT_QPA_PLATFORM", "wayland")
+
+-- START PROGRAMS
+
+hl.on("hyprland.start", function()
+	hl.exec_cmd("caelestia shell -d")
+end)
 
 -- LOOK AND FEEL
 
@@ -78,6 +92,12 @@ hl.config({
 		force_default_wallpaper = 1,
 		disable_hyprland_logo = false,
 	},
+})
+
+hl.config({
+	xwayland = {
+		force_zero_scaling = true;
+	};
 })
 
 -- INPUT

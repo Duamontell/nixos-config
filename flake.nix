@@ -16,14 +16,34 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    { nixpkgs, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+
+      user = "dutelik";
+      hostname = "nixos";
+      stateVersion = "26.05";
     in
     {
-      homeConfigurations."dutelik" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+      nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
+        inherit system;
+
+        specialArgs = {
+          inherit nixpkgs home-manager user hostname stateVersion;
+        };
+
+        modules = [
+          ./host/configuration.nix
+        ];
+      };
+
+      homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+
+        extraSpecialArgs = {
+          inherit inputs user hostname stateVersion;
+        };
+
         modules = [
           ./home-manager/home.nix
         ];

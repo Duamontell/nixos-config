@@ -1,8 +1,12 @@
 {
   imports = [
+    ./caelestia.nix
+    ./eza.nix
     ./git.nix
     ./helix.nix
-    ./kitty.nix
     ./hyprland/hyprland.nix
+    ./kitty.nix
+    ./starship.nix
+    ./zsh.nix
   ];
 }

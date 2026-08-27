@@ -9,13 +9,20 @@
     v2rayn
     firefox
 
-    # code
+    # Code
     lazygit
 
     # Utils
+    bat
+    btop
+    eza
+    fastfetch
+    fd
+    mtr
+    ripgrep
     wl-clipboard
 
-    # lsp/formatter
+    # Lsp/Formatter
     lua-language-server
     stylua
     nixd

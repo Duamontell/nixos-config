@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ user, stateVersion, ... }:
 
 {
   imports = [
@@ -7,9 +7,9 @@
   ];
   
   home = {
-    username = "dutelik";
-    homeDirectory = "/home/dutelik";
-    stateVersion = "26.05";
+    username = user;
+    homeDirectory = "/home/${user}";
+    stateVersion = stateVersion;
   };
 
   programs.home-manager.enable = true;
