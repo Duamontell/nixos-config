@@ -5,9 +5,10 @@
 
   home.packages = with pkgs; [
     # Desktop apps
-    telegram-desktop
-    v2rayn
     firefox
+    keepassxc
+    telegram-desktop
+    throne
 
     # Code
     lazygit
@@ -19,13 +20,14 @@
     fastfetch
     fd
     mtr
+    rclone
     ripgrep
     wl-clipboard
 
     # Lsp/Formatter
     lua-language-server
-    stylua
     nixd
     nixfmt
+    stylua
   ];
 }
