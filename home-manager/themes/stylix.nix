@@ -1,8 +1,8 @@
-{ pkgs, inputs, ...  }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
-    inputs.stylix.homeManagerModules.stylix
+    inputs.stylix.homeModules.stylix
   ];
 
   stylix = {
@@ -25,11 +25,10 @@
         package = pkgs.noto-fonts-color-emoji;
         name = "Noto Color Emoji";
       };
-    };
-
-    sizes = {
-      terminal = 13;
-      applications = 11;
+      sizes = {
+        terminal = 13;
+        applications = 11;
+      };
     };
 
     opacity = {
