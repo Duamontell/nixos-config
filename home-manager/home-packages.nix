@@ -8,7 +8,6 @@
     firefox
     keepassxc
     telegram-desktop
-    throne
 
     # Code
     lazygit
