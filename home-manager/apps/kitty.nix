@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
 
-    themeFile = "tokyo_night_storm";
+    # themeFile = "tokyo_night_storm";
 
     settings = {
       confirm_os_window_close = 0;
