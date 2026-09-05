@@ -8,6 +8,10 @@
   stylix = {
     enable = true;
     polarity = "dark";
+    image = pkgs.fetchurl {
+      url = "https://whvn.cc/d8o5ym";
+      hash = "0mf8rqs4s7xsq15020sln9wr27rmp9k90kl74rn7nf9g9n3gn73i";
+    };
 
     fonts = {
       monospace = {
