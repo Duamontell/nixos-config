@@ -4,7 +4,7 @@
   programs.helix = {
     enable = true;
     defaultEditor = true;
-    theme = "monokai_pro";
+    themes = "monokai_pro";
     
     settings = {
       editor = {
