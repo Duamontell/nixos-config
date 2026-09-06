@@ -52,6 +52,7 @@
     lshw
     brightnessctl
     home-manager
+    dconf
   ];
 
   system.stateVersion = stateVersion;
