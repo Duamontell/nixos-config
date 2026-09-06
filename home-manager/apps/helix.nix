@@ -3,12 +3,16 @@
 {
   programs.helix = {
     enable = true;
-
     defaultEditor = true;
-
+    theme = "monokai_pro";
+    
     settings = {
       editor = {
         line-number = "relative";
+        scrolloff = 8;
+        mouse = true;
+        true-color = true;
+        undercurl = true;
       };
     };
 

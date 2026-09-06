@@ -52,6 +52,7 @@
     gtk.enable = false;
     gnome.enable = false;
     kde.enable = false;
+    helix.enable = false;
   };
   
   };
