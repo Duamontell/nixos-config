@@ -23,7 +23,7 @@
 
     fonts = {
       monospace = {
-        name = "JetBrainsMono Nerd Font";
+        name = "JetBrainsMono Nerd Font Bold";
       };
       sansSerif = {
         package = pkgs.noto-fonts;

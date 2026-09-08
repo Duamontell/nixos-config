@@ -11,6 +11,7 @@
 
     # Code
     lazygit
+    opencode-desktop
 
     # Utils
     bat
@@ -24,6 +25,7 @@
     wl-clipboard
 
     # Lsp/Formatter
+    biome
     lua-language-server
     nixd
     nixfmt
