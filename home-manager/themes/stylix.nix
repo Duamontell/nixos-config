@@ -23,7 +23,7 @@
 
     fonts = {
       monospace = {
-        name = "JetBrainsMono Nerd Font Bold";
+        name = "JetBrainsMono NFM Medium";
       };
       sansSerif = {
         package = pkgs.noto-fonts;
@@ -48,12 +48,14 @@
       applications = 1.0;
     };
 
-  targets = {
-    gtk.enable = false;
-    gnome.enable = false;
-    kde.enable = false;
-    helix.enable = false;
-  };
-  
+    targets = {
+      kitty.enable = true;
+
+      gtk.enable = false;
+      gnome.enable = false;
+      kde.enable = false;
+      helix.enable = false;
+    };
+
   };
 }

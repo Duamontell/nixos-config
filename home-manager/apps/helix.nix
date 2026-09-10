@@ -54,7 +54,7 @@
         soft-wrap = {
           enable = true;
         };
-        
+
         inline-diagnostics = {
           cursor-line = "error";
         };
@@ -64,6 +64,13 @@
     };
 
     languages = {
+      language-server = {
+        biome = {
+          command = "biome";
+          args = [ "lsp-proxy" ];
+        };
+      };
+
       language = [
         {
           name = "lua";
@@ -84,7 +91,50 @@
           };
         }
 
-        
+        {
+          name = "json";
+          language-servers = [ "biome" ];
+          formatter = {
+            command = "biome";
+            args = [ "format" ];
+          };
+        }
+
+        {
+          name = "javascript";
+          language-servers = [ "biome" ];
+          formatter = {
+            command = "biome";
+            args = [ "format" ];
+          };
+        }
+
+        {
+          name = "typescript";
+          language-servers = [ "biome" ];
+          formatter = {
+            command = "biome";
+            args = [ "format" ];
+          };
+        }
+
+        {
+          name = "jsx";
+          language-servers = [ "biome" ];
+          formatter = {
+            command = "biome";
+            args = [ "format" ];
+          };
+        }
+
+        {
+          name = "tsx";
+          language-servers = [ "biome" ];
+          formatter = {
+            command = "biome";
+            args = [ "format" ];
+          };
+        }
       ];
     };
   };
