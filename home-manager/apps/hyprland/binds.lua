@@ -30,4 +30,4 @@ end
 -- CAELESTIA-SPECIFIC BINDS
 -- ============================================
 
-hl.bind(mainMod .. "", hl.dsp.global("caelestia:launcher"))
+hl.bind(mainMod .. " + SPACE", hl.dsp.global("caelestia:launcher"))

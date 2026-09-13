@@ -124,7 +124,7 @@ hl.gesture({
 
 -- KEYBINDS
 
-require("binds.lua")
+require("binds")
 
 -- WINDOWS AND WORKSPACES
 
