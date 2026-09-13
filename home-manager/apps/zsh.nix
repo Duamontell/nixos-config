@@ -13,6 +13,7 @@
       hms = "nh home switch";
 
       h = "hx";
+      cat = "bat";
 
       gs = "git status";
       ga = "git add";

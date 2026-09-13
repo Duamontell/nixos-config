@@ -6,7 +6,7 @@
         name = "Duamontell";
         email = "duamontell@gmail.com";
       };
-      init.defaultBranch = "master";
+      init.defaultBranch = "main";
     };
   };
 }

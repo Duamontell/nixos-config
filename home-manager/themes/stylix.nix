@@ -49,8 +49,8 @@
     };
 
     targets = {
-      kitty.enable = true;
-
+      kitty.enable = false;
+      starship.enable = false;
       gtk.enable = false;
       gnome.enable = false;
       kde.enable = false;
