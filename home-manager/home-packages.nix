@@ -8,6 +8,7 @@
     firefox
     keepassxc
     telegram-desktop
+    v2rayn
 
     # Code
     lazygit
@@ -24,8 +25,13 @@
     ripgrep
     wl-clipboard
 
+    # Compiler & Build Tools
+    cabal-install
+    ghc
+
     # Lsp/Formatter
     biome
+    haskell-language-server
     lua-language-server
     nixd
     nixfmt
