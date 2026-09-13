@@ -61,6 +61,14 @@
 
         popup-border = "all";
       };
+
+      keys = {
+        normal = {
+          "tab" = ":buffer-next";
+          "S-tab" = ":buffer-previous";
+          "C-w" = ":buffer-close";  
+        };
+      };
     };
 
     languages = {
