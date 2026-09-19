@@ -1,7 +1,9 @@
 -- KEYBINDS
 
-local mainMod = "SUPER"
-local terminal = "kitty"
+local vars = require("variables")
+
+local mainMod = vars.mainMod
+local terminal = vars.terminal
 
 -- ============================================
 -- BASE HYPRLAND BINDS
@@ -30,4 +32,4 @@ end
 -- CAELESTIA-SPECIFIC BINDS
 -- ============================================
 
-hl.bind(mainMod .. " + SPACE", hl.dsp.global("caelestia:launcher"))
+require("caelestia-binds")
