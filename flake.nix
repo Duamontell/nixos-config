@@ -35,7 +35,7 @@
         inherit system;
 
         specialArgs = {
-          inherit nixpkgs home-manager user hostname stateVersion;
+          inherit inputs nixpkgs home-manager user hostname stateVersion;
         };
 
         modules = [

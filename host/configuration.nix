@@ -1,9 +1,9 @@
-{ config, pkgs, stateVersion, ... }:
+{ inputs, config, pkgs, stateVersion, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
-    ../nixos
+    (inputs.import-tree ../nixos)
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
