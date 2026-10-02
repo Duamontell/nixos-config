@@ -23,6 +23,7 @@
     mtr
     rclone
     ripgrep
+    tree
     wl-clipboard
 
     # Compiler & Build Tools
