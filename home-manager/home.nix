@@ -1,10 +1,10 @@
-{ user, stateVersion, ... }:
+{ inputs, user, stateVersion, ... }:
 
 {
   imports = [
-    ./apps
     ./home-packages.nix
-    ./themes
+    (inputs.import-tree ./apps)
+    (inputs.import-tree ./themes)
   ];
   
   home = {
