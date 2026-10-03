@@ -8,11 +8,11 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  xdg.portal = {
-    enable = true;
-    config.common.default = "*";
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
-  };
+  # xdg.portal = {
+    # enable = true;
+    # config.common.default = "*";
+    # extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+  # };
 
   hardware.graphics.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
