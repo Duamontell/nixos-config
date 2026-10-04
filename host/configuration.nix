@@ -27,8 +27,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  services.upower.enable = true;
-
   # services.printing.enable = true;
   # services.libinput.enable = true;
   
