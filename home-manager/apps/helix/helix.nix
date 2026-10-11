@@ -65,6 +65,9 @@
 
       keys = {
         normal = {
+          space = {
+            "e" = ":forest-open";
+          };
           "tab" = ":buffer-next";
           "S-tab" = ":buffer-previous";
           "C-w" = ":buffer-close";  
