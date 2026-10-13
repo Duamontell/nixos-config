@@ -8,11 +8,11 @@
     firefox
     keepassxc
     telegram-desktop
-    v2rayn
 
     # Code
     lazygit
     opencode-desktop
+    opencode
 
     # Utils
     bat
