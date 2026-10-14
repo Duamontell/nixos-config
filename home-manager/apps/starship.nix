@@ -4,6 +4,8 @@
     enableZshIntegration = true;
     settings = {
       add_newline = true;
+      format = "$all";
+      right_format = "$time";
 
       username = {
         show_always = true;
@@ -20,6 +22,12 @@
 
       directory = {
         truncation_symbol = "../";
+      };
+
+      time = {
+        disabled = false;
+        format = "[$time]($style)";
+        style = "bold yellow";
       };
     };
   };
