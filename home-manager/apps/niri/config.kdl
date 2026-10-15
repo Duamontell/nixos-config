@@ -129,7 +129,10 @@ layout {
         // active-color "#ffc87f"
         inactive-color "#505050"
         urgent-color "#e7666a"
-        active-gradient from="#ff512f" to="#f09819" angle=135
+
+        // active-gradient from="#ff512f" to="#f09819" angle=135 // Gruvbox
+        active-gradient from="#7aa2f7" to="#bb9af7" angle=135 // Tokyo-Night-Storm
+
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 
