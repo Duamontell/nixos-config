@@ -20,6 +20,7 @@
     };
 
     import-tree.url = "github:denful/import-tree";
+    wrapper-modules.url = "github:nix-community/nix-wrapper-modules";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
