@@ -8,10 +8,10 @@
     firefox
     keepassxc
     telegram-desktop
+    kdePackages.kdenlive
 
     # Code
     lazygit
-    opencode-desktop
     opencode
 
     # Utils
