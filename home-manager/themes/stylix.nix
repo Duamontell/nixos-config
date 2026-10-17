@@ -9,6 +9,10 @@
     enable = true;
     polarity = "dark";
 
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-storm.yaml";    
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-terminal-storm.yaml";    
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-moon.yaml";    
+
     image = pkgs.fetchurl {
       url = "https://w.wallhaven.cc/full/d8/wallhaven-d8o5ym.jpg";
       sha256 = "1fswy1zrk32bcc4szbk6lpxmwm7q6fch05i9dbjmqcd0ppvvipj2";
@@ -58,7 +62,7 @@
       starship.enable = false;
       vesktop.enable = false;
       vscodium.enable = false;
-      yazi.enable = false;
+      # yazi.enable = false;
       zellij.enable = false;
     };
   };
