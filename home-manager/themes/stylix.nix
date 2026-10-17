@@ -48,16 +48,18 @@
       applications = 1.0;
     };
 
+    # autoEnable = false;
     targets = {
+      gnome.enable = false;
+      gtk.enable = false;
+      helix.enable = false;
+      kde.enable = false;
       kitty.enable = false;
       starship.enable = false;
-      zellij.enable = false;
+      vesktop.enable = false;
       vscodium.enable = false;
-      gtk.enable = false;
-      gnome.enable = false;
-      kde.enable = false;
-      helix.enable = false;
+      yazi.enable = false;
+      zellij.enable = false;
     };
-
   };
 }
