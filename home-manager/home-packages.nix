@@ -6,9 +6,10 @@
   home.packages = with pkgs; [
     # Desktop apps
     firefox
-    keepassxc
-    telegram-desktop
     kdePackages.kdenlive
+    keepassxc
+    losslesscut
+    telegram-desktop
 
     # Code
     lazygit
