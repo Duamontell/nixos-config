@@ -9,6 +9,7 @@
     kdePackages.kdenlive
     keepassxc
     losslesscut
+    shotcut    
     telegram-desktop
 
     # Code
@@ -21,6 +22,7 @@
     eza
     fastfetch
     fd
+    mpv
     mtr
     rclone
     ripgrep
