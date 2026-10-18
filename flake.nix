@@ -19,6 +19,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
     import-tree.url = "github:denful/import-tree";
     wrapper-modules.url = "github:nix-community/nix-wrapper-modules";
   };
