@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, lib, ... }:
 
 {
   hardware.graphics.enable = true;
@@ -21,5 +21,30 @@
 
     powerManagement.enable = true;
     powerManagement.finegrained = false;
+  };
+
+  specialisation = {
+    gaming.configuration = {
+      system.nixos.tags = [ "gaming-time" ];
+
+      hardware.nvidia = {
+        powerManagement.finegrained = lib.mkForce false;
+
+        prime = {
+          offload = {
+            enable = lib.mkForce false;
+            enableOffloadCmd = lib.mkForce false;
+          };
+          sync.enable = lib.mkForce true;
+        };
+      };
+      
+      environment.sessionVariables = {
+        __NV_PRIME_RENDER_OFFLOAD = "1";
+        __NV_PRIME_RENDER_OFFLOAD_PROVIDER = "NVIDIA-G0";
+        __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+        __VK_LAYER_NV_optimus = "NVIDIA_only";
+      };
+    };
   };
 }
