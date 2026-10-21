@@ -9,6 +9,7 @@
     kdePackages.kdenlive
     keepassxc
     losslesscut
+    obsidian
     shotcut    
     telegram-desktop
 
