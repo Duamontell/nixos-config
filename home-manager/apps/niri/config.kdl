@@ -231,7 +231,8 @@ window-rule {
 }
 
 window-rule {
-    match app-id="org.gnome.Nautilus" title=r#"^(Open|Save) [Ff]ile$"#
+    // match app-id="org.gnome.Nautilus" title=r#"^(Open|Save) [Ff]ile$"#
+    match app-id="org.gnome.Nautilus"
     open-floating true
 }
 
